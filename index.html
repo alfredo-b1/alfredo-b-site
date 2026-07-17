@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfredo B — Créateur, artiste & entrepreneur</title>
+<meta name="description" content="Site officiel d'Alfredo B : articles, vidéos, musique et parcours d'un créateur passionné par la créativité, la technologie et le développement personnel.">
+<link rel="canonical" href="https://www.alfredob.com/">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alfredo B — Créateur, artiste & entrepreneur">
+<meta property="og:description" content="Articles, vidéos, musique et parcours d'un créateur passionné par la créativité, la technologie et le développement personnel.">
+<meta property="og:url" content="https://www.alfredob.com/">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon : remplacez ces fichiers dans /assets/images -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Repère SEO : données structurées Person (à compléter avec vos vraies infos) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alfredo B",
+  "url": "https://www.alfredob.com/",
+  "jobTitle": "Créateur de contenu, artiste, entrepreneur",
+  "sameAs": [
+    "https://youtube.com/@alfredob",
+    "https://open.spotify.com/artist/alfredob",
+    "https://instagram.com/alfredob",
+    "https://tiktok.com/@alfredob",
+    "https://x.com/alfredob"
+  ]
+}
+</script>
+
+<!-- Google Analytics : remplacez G-XXXXXXX par votre identifiant de mesure -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+-->
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <!-- Logo : remplacez le <span class="mark"> par <img src="assets/images/logo.svg" alt="Alfredo B"> une fois votre logo prêt -->
+      <span class="mark"></span>
+      <span>Alfredo B<small>CRÉATEUR · ARTISTE · ENTREPRENEUR</small></span>
+    </a>
+    <nav class="links" id="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="music.html">Musique</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer le thème clair/sombre">◐</button>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.links').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+<div class="tonearm-rail"><div class="track"></div><div class="head"></div></div>
+
+<main>
+
+  <!-- Bannière : image large, ajoutez assets/images/banner.jpg puis remplacez le placeholder ci-dessous -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal in">
+        <div class="eyebrow">Créateur · Artiste · Entrepreneur</div>
+        <h1>Créer, apprendre<br>et <em>avancer</em> — à voix haute.</h1>
+        <p class="hero-lede">Alfredo B partage ses réflexions, sa musique et ses histoires à travers des articles, des vidéos et des morceaux originaux. Un univers où créativité, technologie et développement personnel se rencontrent.</p>
+        <div class="hero-cta">
+          <a href="blog.html" class="btn btn-solid">Lire le blog</a>
+          <a href="about.html" class="btn btn-ghost">Découvrir mon parcours</a>
+        </div>
+      </div>
+      <div class="reveal in" style="transition-delay:.15s;">
+        <div class="disc"><div class="label">ALFREDO<br>B</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Derniers articles -->
+  <section id="blog">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Blog</div>
+          <h2>Derniers articles</h2>
+        </div>
+        <a href="blog.html" class="btn btn-ghost">Tous les articles</a>
+      </div>
+      <div class="grid cols-3" id="blog-preview"></div>
+    </div>
+  </section>
+
+  <!-- Dernières vidéos -->
+  <section id="videos" style="background:var(--bg-elev);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Vidéos</div>
+          <h2>À voir en ce moment</h2>
+        </div>
+        <a href="videos.html" class="btn btn-ghost">Toutes les vidéos</a>
+      </div>
+      <div class="grid cols-3" id="videos-preview"></div>
+    </div>
+  </section>
+
+  <!-- Musique -->
+  <section id="music">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Musique</div>
+          <h2>Écouter les derniers morceaux</h2>
+        </div>
+        <a href="music.html" class="btn btn-ghost">Toute la musique</a>
+      </div>
+      <div id="tracks-teaser">
+        <!-- Les 2 premiers morceaux sont injectés via JS sur la page dédiée ; ici un aperçu statique léger -->
+      </div>
+      <div class="streaming-links">
+        <a href="#" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="#" target="_blank" rel="noopener">♫ Spotify</a>
+        <a href="#" target="_blank" rel="noopener">♪ Apple Music</a>
+        <a href="#" target="_blank" rel="noopener">▸ Audiomack</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Newsletter</div>
+        <h3 style="margin-bottom:.2em;">Ne manquez aucune sortie</h3>
+        <p class="muted" style="margin:0;">Articles, vidéos et musique, directement dans votre boîte mail.</p>
+      </div>
+      <div>
+        <form id="newsletter-form">
+          <input type="email" required placeholder="Votre adresse e-mail" aria-label="Adresse e-mail">
+          <button class="btn btn-solid" type="submit">S'inscrire</button>
+        </form>
+        <p id="newsletter-msg" class="muted" style="margin-top:.8em;font-size:.85rem;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Communauté -->
+  <section>
+    <div class="wrap" style="text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Communauté</div>
+      <h2 style="max-width:20ch;margin:0 auto .5em;">Rejoignez une communauté qui crée, apprend et avance ensemble.</h2>
+      <p class="muted" style="max-width:52ch;margin:0 auto 2em;">Retrouvez Alfredo B sur les réseaux pour suivre les coulisses, échanger et faire partie de l'aventure.</p>
+      <div class="social-row" style="justify-content:center;">
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:1em;"><span class="mark"></span><span>Alfredo B</span></div>
+        <p class="muted" style="max-width:34ch;">Créateur de contenu, artiste et entrepreneur. Musique, technologie, motivation, culture et actualité.</p>
+        <div class="social-row" style="margin-top:1.4rem;">
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener">Spotify</a>
+          <a href="#" target="_blank" rel="noopener">Apple Music</a>
+          <a href="#" target="_blank" rel="noopener">Audiomack</a>
+          <a href="#" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="music.html">Musique</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Alfredo B. Tous droits réservés.</span>
+      <span><a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

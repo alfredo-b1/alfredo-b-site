@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article — Alfredo B</title>
+<meta name="description" content="Lire un article du blog d'Alfredo B.">
+<link rel="canonical" href="https://www.alfredob.com/article.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Article — Alfredo B">
+<meta property="og:description" content="Lire un article du blog d'Alfredo B.">
+<meta property="og:url" content="https://www.alfredob.com/article.html">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <span class="mark"></span>
+      <span>Alfredo B<small>CRÉATEUR · ARTISTE · ENTREPRENEUR</small></span>
+    </a>
+    <nav class="links" id="nav-links">
+      <a href="index.html" >Accueil</a>
+      <a href="about.html" >À propos</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="videos.html" >Vidéos</a>
+      <a href="music.html" >Musique</a>
+      <a href="gallery.html" >Galerie</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer le thème clair/sombre">◐</button>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.links').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+<div class="tonearm-rail"><div class="track"></div><div class="head"></div></div>
+
+<main>
+
+  <section style="padding-top:64px;">
+    <div class="wrap" style="max-width:760px;">
+      <a href="blog.html" class="pill" style="margin-bottom:2rem;display:inline-block;">← Retour au blog</a>
+      <div id="article-content"><p class="muted">Chargement de l'article…</p></div>
+
+      <div id="share-row" class="share-row"></div>
+
+      <hr style="border:none;border-top:1px solid var(--line);margin:3rem 0;">
+
+      <!-- Commentaires : ce formulaire est une démonstration front-end.
+           Pour publier de vrais commentaires modérés, connectez un service
+           (Disqus, Giscus, ou une base de données via votre back-office). -->
+      <div class="eyebrow">Commentaires</div>
+      <h3 style="margin-bottom:1.4rem;">Réagissez à cet article</h3>
+
+      <form id="comment-form" style="margin-bottom:2rem;">
+        <div class="form-field">
+          <label for="comment-name">Nom</label>
+          <input type="text" id="comment-name" placeholder="Votre nom">
+        </div>
+        <div class="form-field">
+          <label for="comment-text">Commentaire</label>
+          <textarea id="comment-text" required placeholder="Votre message…" style="min-height:100px;"></textarea>
+        </div>
+        <button class="btn btn-solid" type="submit">Publier le commentaire</button>
+      </form>
+
+      <div id="comments-list">
+        <div class="comment">
+          <div class="who">Léa M. <span>il y a 2 jours</span></div>
+          <p>Merci pour ce partage, ça fait vraiment réfléchir sur ma propre façon de travailler.</p>
+        </div>
+        <div class="comment">
+          <div class="who">Karim D. <span>il y a 5 jours</span></div>
+          <p>Hâte de voir la suite de cette série d'articles !</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:1em;"><span class="mark"></span><span>Alfredo B</span></div>
+        <p class="muted" style="max-width:34ch;">Créateur de contenu, artiste et entrepreneur. Musique, technologie, motivation, culture et actualité.</p>
+        <div class="social-row" style="margin-top:1.4rem;">
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener">Spotify</a>
+          <a href="#" target="_blank" rel="noopener">Apple Music</a>
+          <a href="#" target="_blank" rel="noopener">Audiomack</a>
+          <a href="#" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="music.html">Musique</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Alfredo B. Tous droits réservés.</span>
+      <span><a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

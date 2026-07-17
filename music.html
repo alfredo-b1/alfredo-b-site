@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Musique — Alfredo B</title>
+<meta name="description" content="Écoutez la discographie d'Alfredo B : EP, singles et morceaux originaux.">
+<link rel="canonical" href="https://www.alfredob.com/music.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Musique — Alfredo B">
+<meta property="og:description" content="Écoutez la discographie d'Alfredo B : EP, singles et morceaux originaux.">
+<meta property="og:url" content="https://www.alfredob.com/music.html">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <span class="mark"></span>
+      <span>Alfredo B<small>CRÉATEUR · ARTISTE · ENTREPRENEUR</small></span>
+    </a>
+    <nav class="links" id="nav-links">
+      <a href="index.html" >Accueil</a>
+      <a href="about.html" >À propos</a>
+      <a href="blog.html" >Blog</a>
+      <a href="videos.html" >Vidéos</a>
+      <a href="music.html" class="active">Musique</a>
+      <a href="gallery.html" >Galerie</a>
+      <a href="contact.html" >Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer le thème clair/sombre">◐</button>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.links').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+<div class="tonearm-rail"><div class="track"></div><div class="head"></div></div>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <div class="eyebrow">Musique</div>
+      <h1>Écouter la discographie</h1>
+      <p class="hero-lede">Morceaux originaux, EP et singles — à écouter directement ici ou sur vos plateformes préférées.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="max-width:820px;">
+      <div id="tracks-list"></div>
+      <p class="muted" style="font-size:.85rem;margin-top:1rem;">
+        <!-- Pour ajouter un morceau : éditez assets/data/tracks.json et renseignez le champ "src" avec le lien vers votre fichier audio (mp3). -->
+        Nouveaux morceaux ajoutés régulièrement.
+      </p>
+    </div>
+  </section>
+
+  <section style="background:var(--bg-elev);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center;">Écouter partout</div>
+      <h2 style="margin-bottom:1.2rem;">Retrouvez toute la musique sur vos plateformes</h2>
+      <div class="streaming-links" style="justify-content:center;">
+        <a href="#" target="_blank" rel="noopener">▶ YouTube Music</a>
+        <a href="#" target="_blank" rel="noopener">♫ Spotify</a>
+        <a href="#" target="_blank" rel="noopener">♪ Apple Music</a>
+        <a href="#" target="_blank" rel="noopener">▸ Audiomack</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:1em;"><span class="mark"></span><span>Alfredo B</span></div>
+        <p class="muted" style="max-width:34ch;">Créateur de contenu, artiste et entrepreneur. Musique, technologie, motivation, culture et actualité.</p>
+        <div class="social-row" style="margin-top:1.4rem;">
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener">Spotify</a>
+          <a href="#" target="_blank" rel="noopener">Apple Music</a>
+          <a href="#" target="_blank" rel="noopener">Audiomack</a>
+          <a href="#" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="videos.html">Vidéos</a></li>
+          <li><a href="music.html">Musique</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Alfredo B. Tous droits réservés.</span>
+      <span><a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
