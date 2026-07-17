@@ -1,0 +1,126 @@
+# Use DecapBridge PKCE auth (required)
+backend:
+  name: git-gateway
+  repo: alfredo-b1/alfredo-b-site
+  branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/273028b5-8c15-4aea-ab7a-eded8e991207/pkce
+  auth_token_endpoint: /sites/273028b5-8c15-4aea-ab7a-eded8e991207/token
+  gateway_url: https://gateway.decapbridge.com
+
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://cozy-valkyrie-2ab011.netlify.app
+
+local_backend: false
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+locale: "fr"
+
+collections:
+  - name: "posts"
+    label: "Articles de blog"
+    files:
+      - file: "assets/data/posts.json"
+        label: "Tous les articles"
+        name: "posts"
+        fields:
+          - label: "Articles"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Identifiant unique (sans espace ni accent)", name: "id", widget: "string"}
+              - {label: "Numéro de catalogue (ex. AB-015)", name: "number", widget: "string"}
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Catégorie", name: "category", widget: "string"}
+              - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+              - {label: "Temps de lecture", name: "readTime", widget: "string", default: "5 min"}
+              - {label: "Extrait (résumé court)", name: "excerpt", widget: "text"}
+              - {label: "Contenu de l'article", name: "content", widget: "markdown"}
+
+  - name: "videos"
+    label: "Vidéos"
+    files:
+      - file: "assets/data/videos.json"
+        label: "Toutes les vidéos"
+        name: "videos"
+        fields:
+          - label: "Vidéos"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Numéro de catalogue (ex. AB-V-009)", name: "number", widget: "string"}
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Catégorie", name: "category", widget: "string"}
+              - {label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+              - {label: "Durée (ex. 12:34)", name: "duration", widget: "string"}
+              - {label: "Identifiant YouTube (optionnel)", name: "youtubeId", widget: "string", required: false}
+              - {label: "Description courte", name: "excerpt", widget: "text"}
+
+  - name: "tracks"
+    label: "Musique"
+    files:
+      - file: "assets/data/tracks.json"
+        label: "Tous les morceaux"
+        name: "tracks"
+        fields:
+          - label: "Morceaux"
+            name: "tracks"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Numéro de piste (ex. 05)", name: "number", widget: "string"}
+              - {label: "Titre du morceau", name: "title", widget: "string"}
+              - {label: "Projet / EP / Album", name: "project", widget: "string"}
+              - {label: "Année", name: "year", widget: "string"}
+              - {label: "Fichier audio (mp3)", name: "src", widget: "file", required: false}
+
+  - name: "gallery"
+    label: "Galerie"
+    files:
+      - file: "assets/data/gallery.json"
+        label: "Toutes les photos"
+        name: "gallery"
+        fields:
+          - label: "Photos"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - {label: "Légende", name: "caption", widget: "string"}
+              - {label: "Photo", name: "src", widget: "image", required: false}
+
+  - name: "site"
+    label: "Réglages du site"
+    files:
+      - file: "assets/data/site.json"
+        label: "Photo de profil, bannière, logo et réseaux sociaux"
+        name: "site"
+        fields:
+          - {label: "Photo de profil (page À propos)", name: "profilePhoto", widget: "image", required: false}
+          - {label: "Bannière (page À propos)", name: "bannerPhoto", widget: "image", required: false}
+          - {label: "Logo (en-tête du site)", name: "logo", widget: "image", required: false}
+          - {label: "Lien YouTube", name: "youtube", widget: "string", required: false}
+          - {label: "Lien Spotify", name: "spotify", widget: "string", required: false}
+          - {label: "Lien Apple Music", name: "appleMusic", widget: "string", required: false}
+          - {label: "Lien Audiomack", name: "audiomack", widget: "string", required: false}
+          - {label: "Lien TikTok", name: "tiktok", widget: "string", required: false}
+          - {label: "Lien Instagram", name: "instagram", widget: "string", required: false}
+          - {label: "Lien Facebook", name: "facebook", widget: "string", required: false}
+          - {label: "Lien X (Twitter)", name: "x", widget: "string", required: false}
