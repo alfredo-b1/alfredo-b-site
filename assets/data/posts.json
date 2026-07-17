@@ -1,0 +1,62 @@
+[
+  {
+    "id": "creer-sans-attendre-la-permission",
+    "number": "AB-014",
+    "title": "Créer sans attendre la permission",
+    "category": "Développement personnel",
+    "date": "2026-06-28",
+    "readTime": "6 min",
+    "excerpt": "Pourquoi le meilleur moment pour commencer un projet reste toujours celui où l'on n'est pas encore prêt.",
+    "content": "<p>On attend souvent le bon moment pour se lancer&nbsp;: le bon matériel, la bonne audience, la bonne idée. Mais la vérité, c'est que la légitimité se construit en marchant, pas avant de partir.</p><p>Ce texte reviendra prochainement avec le contenu complet de l'article. En attendant, cet emplacement montre comment un article s'affiche une fois publié&nbsp;: titre, catégorie, temps de lecture et corps de texte enrichi.</p>"
+  },
+  {
+    "id": "la-musique-comme-terrain-d-experimentation",
+    "number": "AB-013",
+    "title": "La musique comme terrain d'expérimentation",
+    "category": "Musique",
+    "date": "2026-06-14",
+    "readTime": "5 min",
+    "excerpt": "Composer sans se soucier du résultat final : ce que l'improvisation m'a appris sur la création en général.",
+    "content": "<p>Chaque session studio commence par une contrainte simple&nbsp;: aucune idée n'est mauvaise avant d'avoir été essayée. Ce réflexe, appris derrière un clavier, s'applique à tous les domaines créatifs.</p>"
+  },
+  {
+    "id": "ce-que-la-technologie-m-a-appris-sur-la-patience",
+    "number": "AB-012",
+    "title": "Ce que la technologie m'a appris sur la patience",
+    "category": "Technologie",
+    "date": "2026-05-30",
+    "readTime": "7 min",
+    "excerpt": "Entre bugs, itérations et refontes complètes, la tech impose une discipline qui dépasse le code.",
+    "content": "<p>Un projet technique ne se termine jamais vraiment&nbsp;: il évolue. Comprendre ça change complètement la manière d'aborder ses ambitions personnelles.</p>"
+  },
+  {
+    "id": "regarder-en-arriere-pour-avancer",
+    "number": "AB-011",
+    "title": "Regarder en arrière pour avancer",
+    "category": "Parcours",
+    "date": "2026-05-09",
+    "readTime": "8 min",
+    "excerpt": "Un retour sur les débuts, les doutes et les décisions qui ont façonné le projet Alfredo B.",
+    "content": "<p>Il y a quelques années, ce projet n'était qu'une idée griffonnée dans un carnet. Retour sur le chemin parcouru et les leçons retenues en cours de route.</p>"
+  },
+  {
+    "id": "actualite-culture-pourquoi-s-y-interesser",
+    "number": "AB-010",
+    "title": "Actualité et culture : pourquoi s'y intéresser vraiment",
+    "category": "Culture",
+    "date": "2026-04-22",
+    "readTime": "4 min",
+    "excerpt": "Rester curieux du monde nourrit la création bien plus que n'importe quel tutoriel.",
+    "content": "<p>Suivre l'actualité n'est pas qu'une question d'information&nbsp;: c'est une matière première pour quiconque crée du contenu.</p>"
+  },
+  {
+    "id": "construire-une-communaute-plutot-qu-une-audience",
+    "number": "AB-009",
+    "title": "Construire une communauté plutôt qu'une audience",
+    "category": "Développement personnel",
+    "date": "2026-04-03",
+    "readTime": "6 min",
+    "excerpt": "La différence entre accumuler des vues et créer un lien durable avec les gens qui suivent le travail.",
+    "content": "<p>Une audience regarde. Une communauté participe. Ce texte explore comment cette nuance change toute une manière de créer.</p>"
+  }
+]

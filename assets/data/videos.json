@@ -1,0 +1,47 @@
+[
+  {
+    "number": "AB-V-008",
+    "title": "Dans le studio : construire un morceau de zéro",
+    "category": "Musique",
+    "date": "2026-06-30",
+    "duration": "18:24",
+    "youtubeId": "",
+    "excerpt": "Un aperçu complet du processus créatif, de l'idée initiale au mixage final."
+  },
+  {
+    "number": "AB-V-007",
+    "title": "5 leçons apprises en construisant mes propres outils",
+    "category": "Technologie",
+    "date": "2026-06-11",
+    "duration": "12:47",
+    "youtubeId": "",
+    "excerpt": "Retour d'expérience sur la technologie au service de la créativité."
+  },
+  {
+    "number": "AB-V-006",
+    "title": "Mon parcours, sans filtre",
+    "category": "Parcours",
+    "date": "2026-05-20",
+    "duration": "24:03",
+    "youtubeId": "",
+    "excerpt": "Une conversation ouverte sur les débuts, les échecs et ce qui a vraiment compté."
+  },
+  {
+    "number": "AB-V-005",
+    "title": "Pourquoi je crois à la discipline plus qu'à la motivation",
+    "category": "Développement personnel",
+    "date": "2026-05-02",
+    "duration": "9:58",
+    "youtubeId": "",
+    "excerpt": "Un format court et direct sur ce qui fait vraiment avancer un projet dans la durée."
+  },
+  {
+    "number": "AB-V-004",
+    "title": "Réagir à l'actualité tech de la semaine",
+    "category": "Actualité",
+    "date": "2026-04-18",
+    "duration": "15:12",
+    "youtubeId": "",
+    "excerpt": "Analyse et point de vue sur les sujets qui font parler cette semaine."
+  }
+]
